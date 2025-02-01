@@ -10,45 +10,44 @@
 
         <section id="seleccionar-mascota"> 
             <h2>Elige tu mascota:</h2> 
+            <label for="hipodoge">Hipodoge</label>
+            <input type="radio" name="mascota" id="hipodoge" />
 
-            <label for="hipodoge">hipodoge</label>
-            <input type="radio" name= "mascota" id="hipodoge" />
+            <label for="capipepo">Capipepo</label>
+            <input type="radio" name="mascota" id="capipepo" />
 
-            <label for="capipepo">capipepo</label>
-            <input type="radio" name= "mascota" id="capipepo" />
+            <label for="ratigueya">Ratigueya</label>
+            <input type="radio" name="mascota" id="ratigueya" />
 
-            <label for="ratigueya">ratigueya</label>
-            <input type="radio" name= "mascota" id="ratigueya" />
+            <ul>
+                <li><strong>Hipodoge</strong>: Agua 💧</li>
+                <li><strong>Capipepo</strong>: Tierra 🌵</li>
+                <li><strong>Ratigueya</strong>: Fuego 🔥</li>
+                <li><strong>Langostelvis</strong>: Agua 💧 y Fuego 🔥</li>
+                <li><strong>Tucapalma</strong>: Tierra 🌵 y Agua 💧</li>
+                <li><strong>Paydos</strong>: Fuego 🔥 y Tierra 🌵</li>
+            </ul>
 
-            Hipodoge -> Agua 💧
-            Capipepo -> Tierra 🌵
-            Ratigueya -> Fuego 🔥
-            Langostelvis -> Agua 💧 y Fuego 🔥
-            Tucapalma -> Tierra 🌵 y Agua 💧
-            Paydos -> Fuego 🔥 y Tierra 🌵
-
-            <button id="boton-mascota">Seleccion</button>
+            <button id="boton-mascota">Seleccionar</button>
         </section>
 
-        <section id="seleccionar-ataque">
+        <section id="seleccionar-ataque" style="display: none;">
             <h2>Elige tu ataque:</h2>
-
             <p>Tu mascota tiene <span>3</span> vidas</p>
             <p>La mascota de tu enemigo tiene <span>3</span> vidas</p>
-
             <p>
                 <button id="boton-fuego">Fuego 🔥</button> 
                 <button id="boton-agua">Agua 💧</button>  
                 <button id="boton-tierra">Tierra 🌵</button>
             </p>
         </section>
-        <section id="mensajes">
-            <p>tu mascota ataco con FUEGO, lamascota del enemigo ataco con TIERRA - GANASTE 🎉</p>
-        </section>
 
-        <section id="reiniciar">
+        <article id="mensajes" style="display: none;">
+            <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+        </article>
+
+        <section id="reiniciar" style="display: none;">
             <button id="boton-reiniciar">Reiniciar</button>
         </section>
-        
     </body>
 </html>
